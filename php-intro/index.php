@@ -22,28 +22,60 @@
 
     ?>
 
-    <h2>otro bloque de</h2>
+    <h2>Otro bloque de</h2>
 
     <?php
-
     $nombre='Brian';
 
     $edad='19';
 
    
-
     //echo del contenido de la variable
 
     echo $nombre;
 
- 
-
     //concatenacion de variables
 
-    echo '<h3></h3>'
+    echo '<h3>Mi nombre es ' . $nombre . '</h3>';
+    echo '<br>';
+    echo '<h3>Mi nombre es . $nombre . </h3>'; //esto no muestra el valor de la variable
 
+    //Interpolación variables y texto
+    echo "<h3>Mi edad: $edad </h3>"
+    
 
     ?>
+
+<h2><?php echo 'Hola'?></h2>
+
+<!-- CONDICIONALES -->
+<h2>Condicionales if - else</h2>
+
+<?php
+$resultado = 5;
+//sintaxis de comparación <=, <
+if ($resultado >= 5){
+    echo '<h3 style="color:green">Prueba superada</h3>';
+}
+else{
+    echo '<h3 style="color:red">Prueba suspendida</h3>';
+}
+
+?> 
+
+<h2>Condicional if - elseif - else</h2>
+<!-- Nos permite poder realizar más de una comparación-->
+
+<?php
+$resultado = 'A';
+
+if($resultado == 'A'){
+    echo '<h3 style="color:green">Prueba superada fantástico!</h3>';
+}
+else{
+    echo '<h3 style="color:red">Prueba NO superada</h3>';
+}
+?>
 
 
 </body>
