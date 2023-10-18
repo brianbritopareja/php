@@ -77,6 +77,28 @@ else{
 }
 ?>
 
+<h2>Condicional con switch</h2>
+<?php
+$resultado = 'C';
+
+switch($resultado){
+    case 'A';
+        echo '<h3 style="color:green">Prueba superada fantástico!</h3>';
+        break;
+    case 'B';
+        echo '<h3 style="color:yellow">Prueba superada al límite</h3>';
+        break;
+    default;
+        echo '<h3 style="color:red">Prueba NO superada</h3>';
+        if($resultado == 'C'){
+                echo '<h3>Puedes volver a realizar la prueba pulsando <a href="index.php">Aquí</a></h3>';
+        }
+        else {
+            echo '<h3>No es posible realizar la prueba en este momento</h3>';
+        }
+        break;
+}
+?>
 
 </body>
 </html>
