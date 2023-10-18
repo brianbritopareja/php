@@ -11,8 +11,6 @@
     <?php
     //Holaa
     echo 'Hola Caracola';
-    echo 'Hola Caracola';
-    echo 'Hola Caracola';
     ?>
 
 
