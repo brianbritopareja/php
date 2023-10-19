@@ -83,7 +83,7 @@ $resultado = 'C';
 
 switch($resultado){
     case 'A';
-        echo '<h3 style="color:green">Prueba superada fantástico!</h3>';
+    echo '<h3>Enlace a <a href="resultado-login.php">Aquí</a></h3>';
         break;
     case 'B';
         echo '<h3 style="color:yellow">Prueba superada al límite</h3>';
@@ -102,3 +102,4 @@ switch($resultado){
 
 </body>
 </html>
+
