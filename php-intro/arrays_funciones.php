@@ -9,7 +9,7 @@
     <h2>Funciones array</h2>
     <h3>array_slice - array_esplice</h3>
     <?php
-        //cortar array
+        //cortar array 
         $array=array('a','b','c','d','e','f','g');
        
        
@@ -38,9 +38,7 @@
  
     ?>
     <h3>array_push - array_pop</h3>
- 
-    <?php
- 
+    <?php //array pop es el ultimo elemento de un array
         $array=array('a','b','c','d','e','f','g');
         $ultimoelemento = array_pop($array);
  
@@ -50,7 +48,7 @@
         }
             echo "<br>";
  
-        //agergar elementos nuevos al final
+        //agergar elementos nuevos al final de un array con array_push
  
         $array=array('a','b','c','d','e','f','g');
             array_push($array, 'h','i','j');
@@ -74,7 +72,7 @@
         }
         echo "<br>";
  
-        //añadir elementos al rpinsipio de array
+        //añadir elementos al principio de array con array_unshift
         $array=array('a','b','c','d','e','f','g');
         array_unshift($array, $primerelemento);
         foreach($array as $letra){
@@ -88,7 +86,7 @@
     <h2>sort - array_reverse</h2>
  
     <?php
- 
+ //ordenar un array 
         $array=array("x", "f", "e", "g", "b");
         sort($array);
  
@@ -108,7 +106,7 @@
     <h2>array_unique</h2>
  
     <?php
-   
+   //eliminar elementos repetidos de un array
     $array=array("x", "f", "e", "b", "g", "b", "e");
     $unico=array_unique($array);
    
@@ -123,7 +121,7 @@
 
 
 <?php
-
+//mostrar la posicion de un elemento en un array
     $array = array("x", "f", "e", "b", "g", "b");
     $index = array_search("e", $array);
         
@@ -139,6 +137,7 @@
 <h2>in_array</h2>
 
 <?php
+//comprobar si un elemento existe en un array y si es asi retornar true o false con var_dump
     $array = array("x", "f", "e", "b", "g", "b");
     $existe = in_array("a", $array);
    
@@ -149,6 +148,7 @@
 
 <h2>array_key_exists</h2>
 <?php
+//comprara si un elemento existe en un array y si es asi retornar true o false con var
     $frutas = array("a"=>"Arandano", "p"=>"Platano", "m"=>"Manzana", "n"=>"Naranja");
     $existe = array_key_exists("p", $frutas);
 
