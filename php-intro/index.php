@@ -8,9 +8,14 @@
 <body>
 
     <a href='forloop.php'>ForLoop</a><br>
-    <a href='array.php'>Array</a>
-
-
+    <a href='array.php'>Array</a><br>
+    <a href="formulario.php">Inicio de sesión</a><br>
+    <a href="formulario2.php">Registro</a><br>
+    <a href="arrays_funciones.php">Arrays Funciones</a><br>
+    <a href="textos.php">Textos</a><br>
+    <a href="strings.php">Fechas</a><br>
+    <a href="funciones.php">Funciones</a><br>
+    <a href="includefuncion.php">Include</a><br>
     <H1>Primer uso de PHP</H1>
     
     <?php
@@ -104,7 +109,15 @@ switch($resultado){
         break;
 }
 ?>
-
+<footer>
+            <p style="text-align=center">
+            Creado por 2Asir<?php $fecha = getdate();
+            echo "<br>"; echo "fecha:" . $fecha[ 'mday' ]. "/". $fecha[ 'mon' ]. "/". $fecha[ 'year' ];
+            echo "<br>";?>
+           
+            </p>
+ 
+    </footer>
 </body>
 </html>
 
