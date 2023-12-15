@@ -16,6 +16,9 @@
     <a href="strings.php">Fechas</a><br>
     <a href="funciones.php">Funciones</a><br>
     <a href="includefuncion.php">Include</a><br>
+    <a href="mysql/formulario.php">Formulario</a><br>
+    <a href="mysql/conexion.php">Conexion</a><br>
+    <a href="actividad/inicio_formulario.php">Inicio actividad</a><br>
     <H1>Primer uso de PHP</H1>
     
     <?php
